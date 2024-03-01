@@ -10,16 +10,16 @@ Deep learning neural networks fall under the category of machine learning algori
 
 As mentioned earlier the models created were trained on a set of sign language letters and digits images. Different combinations of datasets were used to create the training dataset and all the images used were obtained from the Kaggle website. The three figures below depict some of the images for each dataset used.
 
-![Figure 2](fig2.png)
+![Figure 2](fig2.PNG)
 
 # Methods
 
 Initially, a model with a relatively small number of parameters was used for the execution of the classification task (36 classes in total). The network is composed of a rescaling layer which is responsible for setting each pixel value of the inserted image between 0 and 1. Following that, 5 convolutional and max pooling layers are used for reducing the size of the image and perform feature extraction. As the network goes deeper the number of filters for each convolutional layer is increasing. Particularly, the first convolutional layer has 16 filters, and that number is doubled for each next layer with the last one having 256 filters as depicted in Figure 1 below.
 
-![Figure 1](fig1.png)
+![Figure 1](fig1.PNG)
 
 # Transfer Learning
 
 Transfer learning is a machine learning method that was first introduced in the early 1980s. Given a large-scale machine learning model that has been trained on a huge amount of data e.g., VGG16, the idea is that this model maybe can be reused to different classification tasks. Thus, it is believed that the model after its training, has acquired a general like knowledge and can perform similar tasks by training only the top part of the model. The layers which do not take part in the training process are called frozen layers since their parameters do not get updated. Several combinations of frozen and unfrozen layers can be used to test which one gives the best performance.
 
-![Figure 3](fig3.png)
+![Figure 3](fig3.PNG)
